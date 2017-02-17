@@ -14,6 +14,7 @@ print("Il nuovo valora e' :", ris)
 print("Salvataggio in sum.data...")
 
 f = open("sum.data","w")
+ris= str(ris)
 f.write(ris)
 f.close()
 
