@@ -1,10 +1,15 @@
-f = open("sum.data","r")
+f = open("sum.data", "r")
+
+if not f:
+   f = open("sum.data", "w")
+   print("Il file verrà creato automotacamente se non esiste")
 
 
-print("Lettura dal file sum.data...: ")
-line = f.readline()
-num = int(line)
-f.close()
+else:
+   print("Lettura dal file sum.data...: ")
+   line = f.readline()
+   num = int(line)
+   f.close()
    
 print(" Ho letto : ", num)
 num2=input("Inserisci il numero da sommare: ")
