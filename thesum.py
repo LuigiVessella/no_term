@@ -1,8 +1,8 @@
+
 f = open("sum.data", "r")
 
 if not f:
-   f = open("sum.data", "w")
-   print("Il file verrà creato automotacamente se non esiste")
+   print("Il file verra' creato automotacamente se non esiste")
 
 
 else:
